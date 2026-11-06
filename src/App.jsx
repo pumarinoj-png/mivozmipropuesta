@@ -189,7 +189,7 @@ export default function App() {
             <ProgressBar step={step} maxStep={state.maxStep} onJump={goTo} />
             <section className="stage" key={step}>
               <header className="stage-head">
-                <p className="stage-meta">Etapa {step} de {STAGES.length} · {stage.minutes}</p>
+                <p className="stage-meta">Etapa {step} de {STAGES.length}</p>
                 <h1 ref={headingRef} tabIndex={-1}>{TITLES[step]}</h1>
                 <p className="nudge">{stage.nudge}</p>
               </header>
